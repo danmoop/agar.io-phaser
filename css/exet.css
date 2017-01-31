@@ -1,0 +1,562 @@
+	/**********************
+	EXET CSS 2016
+	OPEN - SOURCE
+	For free
+	Always available
+	Good using
+
+	*
+	*
+	*
+	*
+	░░░░░░░░░▄░░░░░░░░░░░░░░▄░░░░
+	░░░░░░░░▌▒█░░░░░░░░░░░▄▀▒▌░░░
+	░░░░░░░░▌▒▒█░░░░░░░░▄▀▒▒▒▐░░░
+	░░░░░░░▐▄▀▒▒▀▀▀▀▄▄▄▀▒▒▒▒▒▐░░░
+	░░░░░▄▄▀▒░▒▒▒▒▒▒▒▒▒█▒▒▄█▒▐░░░
+	░░░▄▀▒▒▒░░░▒▒▒░░░▒▒▒▀██▀▒▌░░░
+	░░▐▒▒▒▄▄▒▒▒▒░░░▒▒▒▒▒▒▒▀▄▒▒▌░░
+	░░▌░░▌█▀▒▒▒▒▒▄▀█▄▒▒▒▒▒▒▒█▒▐░░
+	░▐░░░▒▒▒▒▒▒▒▒▌██▀▒▒░░░▒▒▒▀▄▌░
+	░▌░▒▄██▄▒▒▒▒▒▒▒▒▒░░░░░░▒▒▒▒▌░
+	▀▒▀▐▄█▄█▌▄░▀▒▒░░░░░░░░░░▒▒▒▐░
+	▐▒▒▐▀▐▀▒░▄▄▒▄▒▒▒▒▒▒░▒░▒░▒▒▒▒▌
+	▐▒▒▒▀▀▄▄▒▒▒▄▒▒▒▒▒▒▒▒░▒░▒░▒▒▐░
+	░▌▒▒▒▒▒▒▀▀▀▒▒▒▒▒▒░▒░▒░▒░▒▒▒▌░
+	░▐▒▒▒▒▒▒▒▒▒▒▒▒▒▒░▒░▒░▒▒▄▒▒▐░░
+	░░▀▄▒▒▒▒▒▒▒▒▒▒▒░▒░▒░▒▄▒▒▒▒▌░░
+	░░░░▀▄▒▒▒▒▒▒▒▒▒▒▄▄▄▀▒▒▒▒▄▀░░░
+	       WOOF - - - WOOF
+	*
+	************************/
+
+
+	/*        EXAMPLE HTML
+		IT'S ALL IMPORTANT!
+								JQUERY REQUIRED FOR MOBILE MENU!
+	<!DOCTYPE html>
+	<html>
+			<head>
+
+		<script src="https://code.jquery.com/jquery-2.2.2.js"   integrity="sha256-4/zUCqiq0kqxhZIyp4G0Gk+AOtCJsY1TA00k5ClsZYE="   crossorigin="anonymous"></script>
+		<script src="scr.js"></script>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<title>Info</title>
+
+			</head>
+		<body>
+			<div id="index-b">      <----  CENTER BLOCK ( IMPORTANT! MUST TYPE! )
+
+			<header>
+				<img src="img/three.png" id="topmenu" onclick="showmenu();">  <----display: block only when width:768 px (MOBILE DEVICES)
+
+
+					<ul id="toplist">  <------HIDDEN, shows only when you click on menu ( WATCH HIGHER )
+						<li><a href="#">Home</a></li>
+						<li><a href="#">Contact</a></li>
+
+					</ul>
+
+				<nav>
+					<!-- Usually links in a row ( display: inline-block) -->
+						<!--for example: -->
+						<li><a href="#">Home</a></li>
+						<li><a href="#">Contact</a></li>
+						etc.
+						...
+
+			!!!!! WARNING !!!!!
+			WHAT YOU TYPE HERE, MUST GO IN <ul> TOO!
+				</nav>
+			</header>
+			</div>
+
+				...
+			etc.
+		</body>
+	</html>
+
+			*/
+
+	#topmenu{
+		display: none;
+	}
+
+
+	#toplist{
+		float: right;
+		width: 11%;
+		padding-top: 41px;
+		list-style: none;
+		display: none;
+	}
+
+	body,html{
+		padding: 0px auto;
+	}
+
+	/***     MAIN BLOCK WITH CENTER POSITION:
+	     EXAMPLE:
+	          <body>
+	             <div id="index-b">
+	                  ...
+	             </div>
+	          </body>
+
+	        	  ^
+	        	  |
+	        	  |
+
+	     	  important!
+	                                         */
+
+	#index-b{
+		background-image: url();
+		width: 85%;
+		margin: 0px auto;
+		padding-bottom: 55px;
+	}
+
+	/*            TEXT               */
+
+	h1{
+		margin-left: 10%;
+	    font-family: aharoni, calibri;
+	}
+
+	h2{
+		margin-left: 10%;
+		font-family: calibri;
+	}
+
+	h3{
+		margin-left: 10%;
+		font-family: calibri;
+
+	}
+
+	h4{
+		margin-left: 10%;
+		font-family: calibri;
+
+	}
+
+	h5{
+		margin-left: 10%;
+			font-family: calibri;
+
+	}
+
+	article{
+		background-color: #f2f2f2;
+		padding: 10px;
+		font-family: calibri;
+		font-size: 17px;
+		width: 80%;
+		margin: 0px auto;
+	}
+
+	/***    BUTTONS
+	       ------>  <button id="btn">
+	                                     */
+
+	#btn{
+		font-weight: bold;
+		border-radius: 5px;
+		border: 1px solid #000;
+	    color: black;
+	    background-color: #bddbfa;
+	    padding: 15px 32px;
+	    text-align: center;
+	    font-size: 16px;
+	    margin: 4px 2px;
+
+	}
+
+	#btn:hover{
+		transition: 0.3s;
+		background-color: #88C3FE;
+	}
+
+	#btn:not(:hover){
+		transition: 0.3s;
+		background-color: #bddbfa;
+	}
+
+	/*          CHECKBOX
+	        HTML :
+	               <input type="checkbox" id="chckbox">
+	                                                     */
+
+	#chckbox{
+		-o-transform: scale(1.6);
+		-moz-transform: scale(1.6);
+		-webkit-transform: scale(1.6);
+		transform: scale(1.6);
+	}
+
+	/**     CLOSE BTN : LIKE (X)
+	                WITH VALUE="X"  <---- important  ------>
+	                              <button>X</button>
+	                                                */
+
+	#closebtn{
+		border: 2px solid #bddbfa;
+		background: #fff;
+		border-radius: 50px;
+		padding: 10px;
+	}
+
+	#closebtn:hover{
+		transition: 0.4s;
+		background-color: #F2F2F2;
+	}
+
+	#closebtn:not(:hover){
+		transition: 0.4s;
+		background: #fff;
+	}
+
+	/**         SEARCH FORM
+	       -------->   HTML CODE :
+
+	          <form action="" method="post" class="search">
+	  				<input type="search" name="" placeholder="Поиск" class="input" />
+	  				<input name="" value="" class="submit" />
+			  </form>
+	                                                      */
+
+	/*  SEARCH FORM ----> */ .search {
+	  width: 35%;
+	  position: relative;
+	}
+
+
+	.search input {
+	  border: none;
+	}
+
+	.search .input {
+	  width: 100%;
+	  padding: 8px 37px 9px 15px;
+	  -moz-box-sizing: border-box;
+	  box-sizing: border-box;
+
+	  box-shadow: inset 0 0 5px rgba(0,0,0,0.1), inset 0 1px 2px rgba(0,0,0,0.3);
+
+	  border-radius: 20px;
+
+	  background: ;
+	  font: 13px Tahoma, Arial, sans-serif;
+	  outline: none;
+	}
+
+	.search .input:focus {
+	  box-shadow: inset 0 0 5px rgba(0,0,0,0.2), inset 0 1px 2px rgba(0,0,0,0.4);
+	  background: #E8E8E8;
+	}
+
+
+	.search .submit {
+
+	  position: absolute;
+	  top: 0;
+	  right: 0;
+
+	  width: 37px;
+	  height: 100%;
+
+	  cursor: pointer;
+	  background: url(https://lh4.googleusercontent.com/-b-5aBxcxarY/UAfFW9lVyjI/AAAAAAAABUg/gQtEXuPuIds/s13/go.png) 50% no-repeat;
+
+	  opacity: 0.5;
+	}
+
+
+	.search .submit:hover {
+	  opacity: 0.8;
+	}
+
+	input[type="search"] {
+	  -webkit-appearance: none;
+	}
+
+
+	/*                 HEADER            */
+
+	header{
+		margin: 0px auto;
+		text-align: center;
+		width: 100%;
+		height: 100px;
+		background-color: #bddbfa;
+
+		/* OR */
+
+		background-image: ;
+	}
+
+	footer{
+		font-family: calibri;
+		color: white;
+		text-align: center;
+		width: 100%;
+		height: 100px;
+		float: bottom;
+		background-color: #585858;
+	}
+
+
+	/*             DIVIDER       ↓
+										*/
+	hr{
+
+		padding: 0.1px;
+		background-color: #585858;
+	}
+
+
+	/* INPUT |  WITH WIDTH 100%  ↓    */
+
+	#width100{
+		border-radius: 4px;
+		border: 1px solid #777;
+		width: 100%;
+		padding-top: 5px;
+	}
+
+	/* INPUT |  WITH WIDTH 20%   ↓     */
+	#usualinput{
+		padding: 5px;
+		width: 20%;
+		border-radius: 4px;
+		border: 1px solid #777;
+	}
+
+	/* INPUT | BACKGROUND COLOR : black
+	                 WITH 20%
+	                                 */
+
+	#blackbg{
+		border-radius: 4px;
+		border: 2px solid #000;
+		color: white;
+		width: 20%;
+		padding: 5px;
+		background: #2E2E2E;
+	}
+
+	/* INPUT |  BACKGROUND COLOR : black
+	                 WITH WIDTH 100%      ↓
+	                                 */
+
+	    #blackbg100{
+		border-radius: 4px;
+		border: 2px solid #000;
+		color: white;
+		width: 100%;
+		padding: 5px;
+		background: #2E2E2E;
+	}
+
+	/***    NAVIGATION    ↓    */
+
+	nav li{
+		padding-top: 20px;
+		padding-bottom: 20px;
+		padding-right: 40px;
+		font-size: 20px;
+		display: inline-block;
+		padding-left: 40px;
+		list-style: none;
+		color: #fff;
+	}
+
+	nav a{
+		font-family: calibri;
+		color: #fff;
+		text-decoration: none;
+	}
+
+	nav a:hover{
+
+		transition: 0.2s;
+		color: #fff;
+	}
+
+	nav a:not(:hover){
+		color: #fff;
+	}
+
+	p{
+		font-family: calibri;
+		font-size: 20px;
+		width: 40%;
+	}
+
+	/**      DATE ( FOR EXAMPLE :
+			21:43, 24.03.2016 )
+			 					↓		**/
+	#date{
+		font-family: cursive;
+		font-size: 12px;
+	}
+
+	/**     TAGS ( FOR EXAMPLE :
+	        COMPUTER,Android, Frontend, etc. )
+	                                    ↓       */
+
+	#tags{
+		font-family: cursive;
+		font-size: 14px;
+	}
+
+	/*          BLOCKS
+	                      ↓    */
+
+	#block1{
+		/*         CAN CHANGE background-color
+								WIDTH & HEIGHT
+					HTML:
+			<div id="block1"></div>
+									↓	*/
+		border-radius: 10px;
+		background-color: #81BEF7;
+		width: 250px;
+		height: 250px;
+	}
+
+	#block2{
+	/*         CAN CHANGE background-color
+								WIDTH & HEIGHT
+				<div id="block2"></div>
+										↓		*/
+		border-radius: 10px;
+		background-color: #81ffff;
+		width: 250px;
+		height: 250px;
+	}
+
+	#block3{
+	border-radius: 10px;
+	/*         CAN CHANGE background-color
+								WIDTH & HEIGHT
+			<div id="block3"></div>
+									↓	*/
+		background-color: #44BEF7;
+
+		width: 250px;
+		height: 250px;
+	}
+
+	#block4{
+	border-radius: 10px;
+		/*         CAN CHANGE background-color
+								WIDTH & HEIGHT
+				<div id="block4"></div>
+									↓				*/
+		background-color: #11BEF7;
+
+		width: 250px;
+		height: 250px;
+	}
+
+	a{
+		border: 1px solid #000;
+		transition: 0.2s;
+		font-family: calibri;
+		font-size: 20px;
+		background-color: #ff6e6e;
+		color: #fff;
+		font-weight: bold;
+		padding: 2px;
+		padding: 10px;
+		padding-right: 35px;
+		padding-left: 35px;
+		text-decoration: none;
+	}
+
+	a:hover{
+		color: white;
+		transition: 0.2s;
+		background-color: #333;
+	}
+
+	/*          @MEDIA SELECTORS FOR ADAPTIVE DESIGN */
+
+	@media (max-height: 1600px){
+		#main{
+			width: 1400px;
+			margin: 0px auto;
+		}
+	}
+
+	@media (max-width: 979px){
+
+	/*  DISPLAY: NONE , TO CHANGE NAV TO MENU FOR MOBILE DEVICES ( THREE BUTTONS )
+						LIKE THIS :
+									  MENU
+									  ____
+									  ____
+									  ____
+									  							 */
+
+		nav{
+			display: none;
+		}
+
+		#topmenu{
+			padding-right: 70px;
+			padding-top: 25px;
+			float: right;
+			display: block;
+		}
+
+		#toplist{
+			display: none;
+		}
+
+		a{
+			width: 40%;
+			padding-bottom: 5px;
+		}
+
+		#toplist li{
+			padding: 15px;
+		}
+
+		#toplist a{
+
+			width: 40%;
+		}
+
+	}
+
+	/*************
+	*
+	*
+	CAN ADD ANY SELECTOR'S
+	   IT'S OPEN - SOURCE
+	*
+	*
+	░░░░░░░░░▄░░░░░░░░░░░░░░▄░░░░
+	░░░░░░░░▌▒█░░░░░░░░░░░▄▀▒▌░░░
+	░░░░░░░░▌▒▒█░░░░░░░░▄▀▒▒▒▐░░░
+	░░░░░░░▐▄▀▒▒▀▀▀▀▄▄▄▀▒▒▒▒▒▐░░░
+	░░░░░▄▄▀▒░▒▒▒▒▒▒▒▒▒█▒▒▄█▒▐░░░
+	░░░▄▀▒▒▒░░░▒▒▒░░░▒▒▒▀██▀▒▌░░░
+	░░▐▒▒▒▄▄▒▒▒▒░░░▒▒▒▒▒▒▒▀▄▒▒▌░░
+	░░▌░░▌█▀▒▒▒▒▒▄█▄▒▒▒▒▒▒▒█▒▐░░░
+	░▐░░░▒▒▒▒▒▒▒▒▌██▀▒▒░░░▒▒▒▀▄▌░
+	░▌░▒▄██▄▒▒▒▒▒▒▒▒▒░░░░░░▒▒▒▒▌░
+	▀▒▀▐▄█▄█▌▄░▀▒▒░░░░░░░░░░▒▒▒▐░
+	▐▒▒▐▀▐▀▒░▄▄▒▄▒▒▒▒▒▒░▒░▒░▒▒▒▒▌
+	▐▒▒▒▀▀▄▄▒▒▒▄▒▒▒▒▒▒▒▒░▒░▒░▒▒▐░
+	░▌▒▒▒▒▒▒▀▀▀▒▒▒▒▒▒░▒░▒░▒░▒▒▒▌░
+	░▐▒▒▒▒▒▒▒▒▒▒▒▒▒▒░▒░▒░▒▒▄▒▒▐░░
+	░░▀▄▒▒▒▒▒▒▒▒▒▒▒░▒░▒░▒▄▒▒▒▒▌░░
+	░░░░▀▄▒▒▒▒▒▒▒▒▒▒▄▄▄▀▒▒▒▒▄▀░░░
+	       WOOF - - - WOOF
+	*
+	*************/
